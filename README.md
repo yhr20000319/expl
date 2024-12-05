@@ -7,7 +7,7 @@ Table 1: Proportion of pseudo correlation features in the top 200 important feat
 | ERM  | 50%    |
 | IENE | 0%     |
 
-Here, we present an example of a toy to demonstrate that IENE has extracted invariant features. It uses Sensitivity Analysis (SA) [1] to illustrate the importance of features. We applied it separately to the ERM trained model and the IENE trained model to demonstrate that the former's performance degradation was due to the incorrect utilization of pseudo correlated features, while the latter successfully learned how to utilize invariant features. The following content will be added to the Appendix.
+Here, we present a toy example to demonstrate that IENE has extracted invariant features. It uses Sensitivity Analysis (SA) [1] to illustrate the importance of features. We applied it separately to the ERM trained model and the IENE trained model to demonstrate that the former's performance degradation was due to the incorrect utilization of pseudo correlated features, while the latter successfully learned how to utilize invariant features. The following content will be added to the Appendix.
 
 First, we use ERM to train a GNN model on ood Cora, and use SA method to measure the importance score of each feature to the model. Then, we evaluated the feature importance of training data and test data, and found that the coincidence rate of the top 100 important features of training data and test data was **<u>52%</u>**.
 
